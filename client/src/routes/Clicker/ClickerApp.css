@@ -1,0 +1,99 @@
+.clicker-app-container {
+	width: 80%;
+	max-width: 30em;
+	height: 100%;
+	font-size: 24px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	border-radius: 25px;
+	background-color: #919191;
+	flex-direction: column;
+}
+
+.image-container {
+	height: 16em;
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.score-bar {
+	z-index: 1;
+	padding: 0.8em 0 0.8em 0;
+	width: 100%;
+	color: white;
+	background-color: black;
+	margin: 0 0 0 0;
+	border-radius: 25px 25px 0 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.bottom-border {
+	border-radius: 0 0 25px 25px;
+}
+
+.current-score {
+	font-size: 1.2em;
+	color: gold;
+	grid-column-start: 2;
+}
+
+.total-score {
+	font-size: 0.9em;
+	grid-column-start: 3;
+	padding: 0 1em 0 0;
+	justify-self: center;
+}
+
+button.deposit-btn {
+	grid-column-start: 2;
+	justify-self: center;
+	width: 6em;
+	display: inline-block;
+	padding: 0.35em 1em;
+	border-radius: 1em;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-size: 1em;
+	font-weight: bolder;
+	text-align: center;
+	transition: all 0.2s;
+	background-color: rgb(19, 165, 0);
+	color: rgb(255, 255, 255);
+	border: 0.1em solid rgb(19, 165, 0);
+}
+button.deposit-btn:hover {
+	color: rgb(19, 165, 0);
+	background-color: #ffffff;
+}
+
+@media all and (max-width: 50em) {
+	.score-bar {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		min-height: 6em;
+	}
+	.bottom-border {
+		min-height: 3em;
+	}
+	.total-score {
+		padding: 0 0 0 0;
+	}
+	.image-container {
+		height: 15em;
+	}
+}
+
+@media all and (max-width: 35em) {
+	.image-container {
+		height: 9em;
+	}
+}

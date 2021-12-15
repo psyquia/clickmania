@@ -1,0 +1,11 @@
+django
+mysqlclient
+djangorestframework
+django-cors-headers
+djangorestframework-simplejwt
+django-filter
+pyjwt==1.7.1
+gunicorn
+numpy
+pytz
+django-environ

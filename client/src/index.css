@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+
+	@media only screen and (max-width: 1200px) {
+		font-size: 58%;
+	}
+	@media only screen and (min-width: 1980px) {
+		font-size: 70%;
+	}
+}
+
+body {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 400;
+	line-height: 1.6;
+	font-size: 1.6rem;
+	background: #f9f9f9;
+	color: #333;
+	overflow-y: scroll;
+}
+
+h1 {
+	font-weight: bold;
+}
+
+h2 {
+	font-weight: bold;
+}
+
+h3 {
+	font-weight: bold;
+}
+
+h4 {
+	font-weight: bold;
+}

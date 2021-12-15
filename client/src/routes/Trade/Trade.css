@@ -1,0 +1,15 @@
+.header-center {
+	grid-column-start: 2;
+	grid-column-end: 2;
+}
+
+.header-right {
+	grid-column-start: 3;
+	grid-column-end: 3;
+}
+
+@media (max-width: 60em) {
+	.filterbar-container {
+		margin: 0 0 1em 1em;
+	}
+}

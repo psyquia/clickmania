@@ -1,0 +1,110 @@
+table {
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: separate;
+	border-spacing: 1em;
+	table-layout: fixed;
+}
+
+th {
+	border-style: solid;
+}
+
+th,
+td {
+	width: 6em;
+	overflow: hidden;
+}
+
+th#col-title,
+td#col-title {
+	width: 9em;
+	overflow: hidden;
+}
+
+th#col-button,
+td#col-button {
+	width: 8em;
+	overflow: hidden;
+}
+
+.hidden {
+	opacity: 0;
+}
+
+.artwork-img {
+	margin: auto;
+	border: thick double red;
+	border-radius: 0.8em;
+}
+
+.rarity-1 {
+	color: #4f4f4f;
+	border-color: #4f4f4f;
+}
+
+.rarity-2 {
+	color: #0baa1e;
+	border-color: #0baa1e;
+}
+.rarity-3 {
+	color: #085ed8;
+	border-color: #085ed8;
+}
+
+.rarity-4 {
+	color: #d61cc0;
+	border-color: #d61cc0;
+}
+
+.rarity-5 {
+	color: #ff9100;
+	border-color: #ff9100;
+}
+
+button.button-small {
+	display: inline-block;
+	padding: 0.35em 1em;
+	border-radius: 0.5em;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-size: 1em;
+	font-weight: bolder;
+	color: black;
+	background-color: #ffffff;
+	text-align: center;
+	transition: all 0.2s;
+}
+
+button.buy {
+	border: 0.1em solid rgb(19, 165, 0);
+	color: rgb(19, 165, 0);
+}
+
+button.sell {
+	border: 0.1em solid #dc143c;
+	color: #dc143c;
+}
+
+button.sell:hover {
+	color: #ffffff;
+	background-color: #dc143c;
+}
+
+@media (max-width: 600px) {
+	table {
+		border-collapse: collapse;
+	}
+	#header {
+		background-color: white;
+	}
+
+	th {
+		border-style: solid;
+		padding: 0 0.1em;
+	}
+
+	td {
+		padding: 0 0.1em;
+	}
+}

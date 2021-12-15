@@ -1,0 +1,14 @@
+.button-big#signin-btn {
+	display: flex;
+	margin-top: 0.5em;
+	width: 8em;
+	justify-content: center;
+	border-radius: 10px;
+}
+
+.form-main-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}

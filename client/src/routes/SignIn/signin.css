@@ -1,0 +1,17 @@
+.signin-right-box-img {
+	width: 612px;
+	height: 100%;
+	padding: 2em;
+	overflow: hidden;
+}
+
+.link {
+	text-decoration: none;
+	display: inline-block;
+	text-align: left;
+	margin-top: 0em;
+}
+
+ul.link-list {
+	list-style-type: none;
+}

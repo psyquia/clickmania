@@ -1,0 +1,36 @@
+version: "3"
+
+services:
+  backend:
+    build:
+      context: ./server
+      dockerfile: Dockerfile-server
+    command:
+      bash -c "python check_db.py --service-name db --ip db --port 3306 &&
+      python manage.py makemigrations  &&
+      python manage.py migrate  &&
+      python manage.py loaddata fixture.json  &&
+      gunicorn server.wsgi --bind 0.0.0.0:8000"
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+  frontend:
+    build:
+      context: ./client
+      dockerfile: Dockerfile-client
+    ports:
+      - 80:8080
+    depends_on:
+      - backend
+  db:
+    restart: always
+    image: mysql:latest
+    cap_add:
+      - SYS_NICE
+    env_file:
+      - .env_file
+    volumes:
+      - db:/var/lib/mysql
+volumes:
+  db:
